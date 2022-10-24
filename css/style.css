@@ -1,0 +1,169 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  background-color: #34393f;
+  padding: 0% 4.5rem;
+  display: flex;
+  justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+nav .logo h3 {
+  color: #FFF;
+  font-weight: 400;
+}
+nav .nav-info {
+  display: flex;
+  align-items: center;
+}
+nav .nav-info ol {
+  display: flex;
+  margin-bottom: 0;
+}
+nav .nav-info ol li {
+  list-style: none;
+  margin: 0 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+nav .nav-info ol li:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+nav .nav-info ol .white a {
+  color: #FFF;
+  text-decoration: none;
+}
+nav .nav-info ol .gray {
+  color: gray;
+}
+nav .nav-info ol .gray a {
+  text-decoration: none;
+  color: gray;
+}
+nav .nav-info ol .green a {
+  text-decoration: none;
+  color: green;
+}
+
+header {
+  padding: 1.5rem 12.75rem;
+  height: auto;
+}
+header .category {
+  display: flex;
+  justify-content: center;
+}
+header .category .card-category {
+  width: 24%;
+  padding: 1.5rem;
+  height: 12.5rem;
+  line-height: 38px;
+  margin-left: 0.5rem;
+  text-align: center;
+}
+header .category .card-category h3 {
+  letter-spacing: 1px;
+}
+header .category .card-category .doc {
+  font-size: 0.9rem;
+  color: #9A9DA0;
+}
+header .category .card-category span {
+  font-weight: bold;
+}
+header .category .card-category-1 {
+  border: 2px solid #74AFEE;
+}
+header .category .card-category-2 {
+  border: 2px solid #17A2B8;
+}
+header .category .card-category-3 {
+  border: 2px solid #FFC107;
+}
+header .store-tickets {
+  width: 73%;
+  margin: auto;
+}
+header .store-tickets .title {
+  text-align: center;
+  text-transform: uppercase;
+}
+header .store-tickets form .alert {
+  width: 97.5%;
+  display: flex;
+  margin: auto;
+}
+
+footer {
+  height: 6rem;
+  background: #1A3745;
+  padding: 1.5rem 0;
+}
+footer ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ol li {
+  color: #FFF;
+  list-style: none;
+  margin-right: 50px;
+  width: 100px;
+  font-weight: 600;
+}
+footer ol li a {
+  text-decoration: none;
+  color: #FFF;
+}
+footer ol li a:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 1rem 5rem;
+  }
+  header .category {
+    flex-direction: column;
+  }
+  header .category .card-category {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  header .store-tickets {
+    height: auto;
+    width: 100%;
+  }
+  footer {
+    height: auto;
+    padding: 1.75rem 0 0.25rem;
+  }
+  footer ol {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer ol li {
+    margin-bottom: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

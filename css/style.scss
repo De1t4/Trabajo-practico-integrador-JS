@@ -1,0 +1,172 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: #34393f;
+    padding: 0% 4.5rem;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    .logo{
+        display: flex;
+        align-items: center;
+        width: 350px;
+        h3{
+            color: #FFF;
+            font-weight: 400;
+        }
+    }
+    .nav-info{
+        display: flex;
+        align-items: center;
+        ol{
+            display: flex;
+            margin-bottom: 0;
+            li{
+                list-style: none;
+                margin: 0 1.25rem;
+                font-weight: 600;
+                font-size: 1rem;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+            }
+            .white{
+                a{
+                    color: #FFF;
+                    text-decoration: none;
+                }
+            }
+            .gray{
+                color: gray;
+                a{
+                    text-decoration: none;
+                    color: gray;
+                }
+            }
+            .green{
+                a{
+                    text-decoration: none;
+                    color: green;
+                }
+            }
+        }
+    }
+}
+
+header{
+    padding: 1.5rem 12.75rem;
+    height: auto;
+    .category{
+        display: flex;
+        justify-content: center;
+        .card-category{
+            width: 24%;
+            padding: 1.5rem;
+            height: 12.5rem;
+            line-height: 38px;
+            margin-left: 0.5rem;
+            text-align: center;
+            h3{
+                letter-spacing: 1px;
+            }
+            .doc{
+                font-size: 0.9rem;
+                color: #9A9DA0;
+            }
+            span{
+                font-weight: bold;
+            }
+        }
+        .card-category-1{
+            border: 2px solid #74AFEE;
+        }
+        .card-category-2{
+            border: 2px solid #17A2B8;
+        }
+        .card-category-3{
+            border: 2px solid #FFC107;
+        }
+    }
+    .store-tickets{
+        width: 73%;
+        margin: auto;
+        .title{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        form{
+            .alert{
+                width: 97.5%;
+                display: flex;
+                margin: auto;
+            }
+        }
+    }
+}
+
+footer{
+    height: 6rem;
+    background: #1A3745;
+    padding: 1.5rem 0;
+    ol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            color: #FFF;
+            list-style: none;
+            margin-right: 50px;
+            width: 100px;
+            font-weight: 600;
+            a{
+                text-decoration: none;
+                color: #FFF;
+                &:hover{
+                    color: white;
+                    cursor: pointer;
+                    opacity: 0.65;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    header{
+        height: auto;
+        padding: 1rem 5rem;
+        .category{
+            flex-direction: column;
+            .card-category{
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+        .store-tickets{
+            height: auto;
+            width: 100%;
+        }
+    } 
+    footer{
+        height: auto;
+        padding: 1.75rem 0 0.25rem;
+        ol{
+            flex-direction: column;
+            text-align: center;
+            li{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
